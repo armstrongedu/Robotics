@@ -147,7 +147,7 @@ void show_levels(int level,int red,int green,int blue){
   }
   if(level>NUMPIXELS/2+1){
       for(int i=0;i<NUMPIXELS;i++){
-    pixels.clear();
+   
     pixels.setPixelColor(i, pixels.Color(red,green,blue));
   }
   pixels.show();
