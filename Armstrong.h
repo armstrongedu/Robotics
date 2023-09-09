@@ -137,15 +137,17 @@ void initialize_face(int PIN,int LED_COUNT){
   pixels.show();
 }
 void show_levels(int level,int red,int green,int blue){
+
   if(level<1){
-      for(int i=0;i<NUMPIXELS;i++){
     pixels.clear();
+      for(int i=0;i<NUMPIXELS;i++){    
     pixels.setPixelColor(i, pixels.Color(0,0,0));
   }
   pixels.show();
     return;
   }
   if(level>NUMPIXELS/2+1){
+    pixels.clear();
       for(int i=0;i<NUMPIXELS;i++){
    
     pixels.setPixelColor(i, pixels.Color(red,green,blue));
