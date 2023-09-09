@@ -26,5 +26,5 @@ void loop()
   Serial.print(center);
   Serial.print(" ");
   Serial.println(right); //notice here we print a new line
-  delay(1000);
+  delay(1000);           // add delay so we can read the data
 }
