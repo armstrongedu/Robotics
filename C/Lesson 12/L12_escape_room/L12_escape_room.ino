@@ -6,14 +6,14 @@
 
 
 void setup() {
-
+ begin();
 }
 
 void loop() {
   // Step 1: Make sure the Trigger is turned off
    float distance = getDistance();
     // Keep turning until an exit is found (distance > 80cm)
-    while (distance > 80) {
+    while (distance < 80) {
       rotateRight(70);
       delay(100);
       distance = getDistance(); // Get updated distance
