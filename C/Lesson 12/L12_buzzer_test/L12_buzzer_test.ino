@@ -2,7 +2,7 @@
   Lesson 12
   Mission 1
 */
- int buzzerPin = D3;  // Replace with your buzzer's pin number
+#define buzzerPin 3  // Replace with your buzzer's pin number
 
 void setup() {
   pinMode(buzzerPin, OUTPUT); // Set the buzzer pin as an output

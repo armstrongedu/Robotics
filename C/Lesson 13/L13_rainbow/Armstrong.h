@@ -1,3 +1,4 @@
+#include "HardwareSerial.h"
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
  #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
@@ -120,6 +121,10 @@ void initialize_Bluetooth(){
   #endif
 }
 void initialize_face(int PIN = led_ring_pin, int LED_COUNT = NUMPIXELS){
+  /*Serial.print("led count: ");
+  Serial.print(LED_COUNT);
+  Serial.print("    pin number:");
+  Serial.println(PIN);*/
   pixels.setPin(PIN);
   pixels.updateLength(LED_COUNT);
   NUMPIXELS=LED_COUNT;

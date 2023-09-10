@@ -27,11 +27,11 @@ void setup() {
   pinMode(A2, OUTPUT);//front right motor pin 2
 
 
-  //setting motors speeds to 70/255
-  analogWrite(5, 70);
-  analogWrite(6, 70);
-  analogWrite(9, 70);
-  analogWrite(10, 70);
+  //setting motors speeds to 125/255
+  analogWrite(5, 125);
+  analogWrite(6, 125);
+  analogWrite(9, 125);
+  analogWrite(10, 125);
 
 }
 

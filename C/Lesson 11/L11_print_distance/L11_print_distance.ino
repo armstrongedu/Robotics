@@ -2,8 +2,8 @@
   Lesson 11
   Mission 1
 */
- int TriggerPin = A3;
- int EchoPin = D4;
+#define TriggerPin 4
+#define EchoPin A3
 
 void setup() {
   Serial.begin(9600);
@@ -22,7 +22,7 @@ void loop() {
   digitalWrite(TriggerPin, LOW);
   
   // Step 3: Calculate the time it takes for the Echo to hear the echo
-  long duration = pulseIn(EchoPin, HIGH);//returns the time in microseconds
+  float duration = pulseIn(EchoPin, HIGH);//returns the time in microseconds
   
   // Step 4: Calculate the distance in cm
   float distance = duration * 0.034 / 2;  // Speed of sound is 343 m/s, divide by 2 for round-trip

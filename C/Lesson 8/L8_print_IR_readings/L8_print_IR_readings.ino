@@ -17,9 +17,9 @@ void loop()
 { 
   
   //reading sensor values
-  left   = analogRead(21);
+  left   = analogRead(19);
   center = analogRead(20);
-  right  = analogRead(19);
+  right  = analogRead(21);
 
   Serial.print(left);
   Serial.print(" ");
