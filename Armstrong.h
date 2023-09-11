@@ -4,8 +4,8 @@
 #endif
 #include <SoftwareSerial.h>
 #include <IRremote.h>
-#define trig A3
-#define echo 4
+#define trig 4
+#define echo A3
 #define buzzer 3
 #define LTLeft A7
 #define LTCenter A6
