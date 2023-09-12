@@ -23,8 +23,8 @@
 #define MotorFL2 12
 #define MotorFR1 A1
 #define MotorFR2 A2
-#define rxPin 3
-#define txPin 2
+#define rxPin 2
+#define txPin 3
 int led_ring_pin =A4;
 int NUMPIXELS =24;
 Adafruit_NeoPixel pixels(NUMPIXELS,led_ring_pin, NEO_GRB + NEO_KHZ800);
