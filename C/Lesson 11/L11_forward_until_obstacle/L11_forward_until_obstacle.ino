@@ -4,8 +4,8 @@
 */
 #include "Armstrong.h"
 
-const int TriggerPin = A3;
-const int EchoPin = D4;
+#define TriggerPin A3
+#define EchoPin 4
 
 void setup() {
   Serial.begin(9600);
@@ -34,7 +34,7 @@ void loop() {
 
 
   if(distance > 10){
-    Forward();
+    Forward(255);
   }else{
     Stop();
   }

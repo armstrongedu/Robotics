@@ -23,9 +23,9 @@ void setup() {
 void loop() {
 
   //reading sensor values
-  left   = analogRead(A7);
+  left   = analogRead(A5);
   center = analogRead(A6);
-  right  = analogRead(A5);
+  right  = analogRead(A7);
 
   if(left > 100 || center > 100 || right > 100){
 
