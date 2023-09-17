@@ -136,6 +136,10 @@ void initialize_face(int PIN = led_ring_pin, int LED_COUNT = NUMPIXELS){
   }
   pixels.show();
 }
+void show_pixel(int index,int red,int green,int blue){
+  pixels.setPixelColor(index, pixels.Color(red,green,blue));
+  pixels.show();
+}
 void show_levels(int level,int red,int green,int blue){
 
   if(level<1){
