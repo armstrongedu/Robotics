@@ -95,7 +95,7 @@ void resume(){
   IrReceiver.resume();
 } 
 
-char BlutoothRead(){
+char BluetoothRead(){
   #if defined(Bluetooth)
   while(!mySerial.available()){}
   return mySerial.read();
