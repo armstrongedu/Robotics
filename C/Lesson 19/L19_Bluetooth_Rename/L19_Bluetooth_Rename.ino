@@ -9,7 +9,7 @@
 
 void setup() {
   // put your setup code here, to run once:
-  
+  initialize_Bluetooth();
   delay(1000);
   mySerial.begin(38400);
   set_Bluetooth_name("armstrong");
