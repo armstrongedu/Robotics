@@ -17,10 +17,10 @@
 #define MotorFRS 10
 #define MotorBR1 13
 #define MotorBR2 A0
-#define MotorBL1 7
-#define MotorBL2 8
-#define MotorFL1 11
-#define MotorFL2 12
+#define MotorBL1 8
+#define MotorBL2 7
+#define MotorFL1 12
+#define MotorFL2 11
 #define MotorFR1 A1
 #define MotorFR2 A2
 #define rxPin 2

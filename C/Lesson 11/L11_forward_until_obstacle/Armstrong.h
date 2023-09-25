@@ -17,14 +17,14 @@
 #define MotorFRS 10
 #define MotorBR1 13
 #define MotorBR2 A0
-#define MotorBL1 7
-#define MotorBL2 8
-#define MotorFL1 11
-#define MotorFL2 12
+#define MotorBL1 8
+#define MotorBL2 7
+#define MotorFL1 12
+#define MotorFL2 11
 #define MotorFR1 A1
 #define MotorFR2 A2
-#define rxPin 3
-#define txPin 2
+#define rxPin 2
+#define txPin 3
 int led_ring_pin =A4;
 int NUMPIXELS =24;
 Adafruit_NeoPixel pixels(NUMPIXELS,led_ring_pin, NEO_GRB + NEO_KHZ800);
@@ -95,14 +95,36 @@ void resume(){
   IrReceiver.resume();
 } 
 
-char BlutoothRead(){
+char BluetoothRead(){
   #if defined(Bluetooth)
   while(!mySerial.available()){}
   return mySerial.read();
   #endif
   return '?';
 }
-
+void Send_via_Bluetooth(float distance){
+#if defined(Bluetooth)
+mySerial.println(String(distance));
+#endif
+}
+void set_Bluetooth_password(String Pass){
+#if defined(Bluetooth)
+String PassCommand="AT+PSWD="+Pass;
+delay(1000); 
+for(int i=0;i<PassCommand.length();i++) mySerial.write(PassCommand.charAt(i));
+mySerial.write('\r');
+mySerial.write('\n');
+#endif
+}
+void set_Bluetooth_name(String Name){
+#if defined(Bluetooth)
+String NameCommand="AT+NAME="+Name;
+delay(1000);
+for(int i=0;i<NameCommand.length();i++) mySerial.write(NameCommand.charAt(i));
+mySerial.write('\r');
+mySerial.write('\n');
+#endif
+}
 float CharToFloat(String s){
   return float(s[0]); 
 }
@@ -134,6 +156,10 @@ void initialize_face(int PIN = led_ring_pin, int LED_COUNT = NUMPIXELS){
   for(int i=0;i<NUMPIXELS;i++){
     pixels.setPixelColor(i, pixels.Color(0,0,0));
   }
+  pixels.show();
+}
+void show_pixel(int index,int red,int green,int blue){
+  pixels.setPixelColor(index, pixels.Color(red,green,blue));
   pixels.show();
 }
 void show_levels(int level,int red,int green,int blue){
