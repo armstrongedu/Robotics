@@ -18,23 +18,23 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   //forward
-  digitalWrite(11, HIGH);
-  digitalWrite(12, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
   delay(3000);
 
   //stop
-  digitalWrite(11, LOW);
   digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
   delay(100);
 
   //backward
-  digitalWrite(11, LOW);
-  digitalWrite(12, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
   delay(3000);
 
    //stop
-  digitalWrite(11, LOW);
   digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
   delay(100);
 
 

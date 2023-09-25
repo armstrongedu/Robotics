@@ -5,10 +5,10 @@
 #define MotorFLS 6//front left motor PWM pin
 #define MotorBRS 9//back righ motor PWM pin
 #define MotorFRS 10//front right motor PWM pin
-#define MotorBL1 7//back left motor pin 1
-#define MotorBL2 8//back left motor pin 2
-#define MotorFL1 11//front left motor pin 1
-#define MotorFL2 12//front left motor pin 2
+#define MotorBL1 8//back left motor pin 1
+#define MotorBL2 7//back left motor pin 2
+#define MotorFL1 12//front left motor pin 1
+#define MotorFL2 11//front left motor pin 2
 #define MotorBR1 13//back right motor pin 1
 #define MotorBR2 A0//back right motor pin 2
 #define MotorFR1 A1//front right motor pin 1

@@ -39,11 +39,11 @@ void loop() {
 
   ////////Backward/////////
   //Back left motor backward
-  digitalWrite(7, LOW);
-  digitalWrite(8, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
   //front left motor backward
-  digitalWrite(11, LOW);
-  digitalWrite(12, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
   //back right motor backward
   digitalWrite(13, LOW);
   digitalWrite(A0, HIGH);

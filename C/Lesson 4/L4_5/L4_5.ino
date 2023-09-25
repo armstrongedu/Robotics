@@ -40,8 +40,8 @@ void loop() {
 
   ////////forward///////////
   //front left motor foraward
-  digitalWrite(11, HIGH);
-  digitalWrite(12, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
   //Back right motor foraward
   digitalWrite(13, HIGH);
   digitalWrite(A0, LOW);
@@ -49,16 +49,16 @@ void loop() {
   digitalWrite(A1, HIGH);
   digitalWrite(A2, LOW);
   //back left motor foraward
-  digitalWrite(7, HIGH);
-  digitalWrite(8, LOW);
+  digitalWrite(8, HIGH);
+  digitalWrite(7, LOW);
 
   delay(2000);
 
 
   ///////////stop///////////
   //front left motor foraward
-  digitalWrite(11, LOW);
   digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
   //Back right motor foraward
   digitalWrite(13, LOW);
   digitalWrite(A0, LOW);
@@ -66,16 +66,16 @@ void loop() {
   digitalWrite(A1, LOW);
   digitalWrite(A2, LOW);
   //back left motor foraward
-  digitalWrite(7, LOW);
   digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
 
   delay(100);
 
 
   ////////backward///////////
   //front left motor backward
-  digitalWrite(11, LOW);
-  digitalWrite(12, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
   //Back right motor backward
   digitalWrite(13, LOW);
   digitalWrite(A0, HIGH);
@@ -83,15 +83,15 @@ void loop() {
   digitalWrite(A1, LOW);
   digitalWrite(A2, HIGH);
   //back left motor backward
-  digitalWrite(7, LOW);
-  digitalWrite(8, HIGH);
+  digitalWrite(8, LOW);
+  digitalWrite(7, HIGH);
 
   delay(2000);
 
   ///////////stop///////////
   //front left motor foraward
-  digitalWrite(11, LOW);
   digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
   //Back right motor foraward
   digitalWrite(13, LOW);
   digitalWrite(A0, LOW);
@@ -99,8 +99,8 @@ void loop() {
   digitalWrite(A1, LOW);
   digitalWrite(A2, LOW);
   //back left motor foraward
-  digitalWrite(7, LOW);
   digitalWrite(8, LOW);
+  digitalWrite(7, LOW);
 
   delay(100);
 

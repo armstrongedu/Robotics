@@ -29,8 +29,8 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   //front left motor foraward
-  digitalWrite(11, HIGH);
-  digitalWrite(12, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
   //front right motor foraward
   digitalWrite(A1, HIGH);
   digitalWrite(A2, LOW);

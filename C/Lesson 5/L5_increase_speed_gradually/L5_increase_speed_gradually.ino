@@ -41,8 +41,8 @@ void setup() {
 
     ////////forward///////////
     //front left motor foraward
-    digitalWrite(11, HIGH);
-    digitalWrite(12, LOW);
+    digitalWrite(12, HIGH);
+    digitalWrite(11, LOW);
     //Back right motor foraward
     digitalWrite(13, HIGH);
     digitalWrite(A0, LOW);
@@ -50,8 +50,8 @@ void setup() {
     digitalWrite(A1, HIGH);
     digitalWrite(A2, LOW);
     //back left motor foraward
-    digitalWrite(7, HIGH);
-    digitalWrite(8, LOW);
+    digitalWrite(8, HIGH);
+    digitalWrite(7, LOW);
 
     delay(3000);
 
@@ -61,8 +61,8 @@ void setup() {
 
   ///////////stop///////////
   //front left motor stop
-  digitalWrite(11, LOW);
   digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
   //Back right motor stop
   digitalWrite(13, LOW);
   digitalWrite(A0, LOW);
@@ -70,8 +70,8 @@ void setup() {
   digitalWrite(A1, LOW);
   digitalWrite(A2, LOW);
   //back left motor stop
-  digitalWrite(7, LOW);
-  digitalWrite(8, LOW); 
+  digitalWrite(8, LOW);
+  digitalWrite(7, LOW); 
 
 
 }
